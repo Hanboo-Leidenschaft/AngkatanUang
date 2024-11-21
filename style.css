@@ -52,7 +52,7 @@ header {
     color: #0088a9;
 }
 
-button {
+#loginButton {
     padding: 9px 25px;
     background-color: rgba(0, 136, 169, 1);
     border: none;
@@ -62,7 +62,7 @@ button {
     margin-left: 20px;
 }
 
-button:hover {
+#loginButton:hover {
     background-color: rgba(0, 136, 169, 0.8);
 }
 
@@ -126,6 +126,31 @@ footer > p {
     padding: 20px;
     border-radius: 8px;
     width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.modal-content h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    padding: 0;
+    margin: 0 25px 20px 25px;
+}
+
+#loginForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#loginForm input {
+    margin: 10px 0;
+    width: 80%;
 }
 
 .close {
@@ -142,4 +167,17 @@ footer > p {
     text-decoration: none;
     cursor: pointer;
     border-radius: 5px;
+}
+
+#submitLogin {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+#submitLogin:hover {
+    background-color: rgba(0, 136, 169, 0.8);
 }

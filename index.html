@@ -4,6 +4,7 @@
     <meta charset="utf-8"/>
     <title>Angkatan Uang</title>
     <link rel="stylesheet" href="style.css"/>
+</head>
 <body>
     <header>
         <h1 class="logo">ANGKATAN UANG</h1>
@@ -14,7 +15,7 @@
                 <li><a href="#">About</a></li>
             </ul>
         </nav>
-        <a class="" href="#" id="loginButton"><button>Login</button></a>
+        <button id="loginButton">Login</button>
     </header>
     <main>
         <div class="image-container">
@@ -24,14 +25,14 @@
     </main>
     <div id="loginFormModal" class="modal">
       <div class="modal-content">
-        <span class="close">&times;</span>
-          <h2>Login or Sign Up</h2>
-          <form id="loginForm">
+            <span class="close">&times;</span>
+            <h2>Login or Sign Up</h2>
+            <form id="loginForm">
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required><br><br>
             <label for="password">Password</label>
             <input type="password" id="password" name="password"><br><br>
-            <button type="submit">Submit</button>
+            <button id="submitLogin" type="submit">Submit</button>
             </form>
       </div>
     </div>
@@ -39,6 +40,6 @@
         <h3 class="footer-logo">ANGKATAN UANG</h3>
         <p>&copy: 2024 <a href="#">angkatanuang.com</a>. All Rights Reserved</p>
     </footer>
-    <script src="script.js"></script> </head>
+    <script src="script.js"></script>
 </body>
 </html>
