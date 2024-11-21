@@ -1,8 +1,7 @@
 // Get teh modal, button, and close elements
-var modal = 
-document.getElementById("loginFormModal");
-document.getElementById("loginButton");
-document.getElementsByClassName("close");
+var modal = document.getElementById("loginFormModal");
+var btn = document.getElementById("loginButton");
+var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the login button, open the modal
 btn.onclick = function() {
@@ -18,7 +17,7 @@ span.onclick = function() {
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
-    };
+    }
 }
 
 // Handle form submission (just example, just log the value here)
@@ -28,8 +27,8 @@ document.getElementById("loginForm").onsubmit = function(event) {
 var email = document.getElementById("email").value;
 var password = document.getElementById("password").value;
 
-console.log("Email:"+ email);
-console.log("Password"+ password);
+console.log("Email: "+ email);
+console.log("Password: "+ password);
 
 // Here you can send the data to your server for verification
 // e.g., send it to an API for authentication
