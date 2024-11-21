@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+    background-color: #24252A;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex; /*to display the contents filled in a line */
+    justify-content: flex-end;
+    align-items: center; /* to adjust the items will be in top, bottom, or center */
+    padding: 30px 10%;
+}
+
+.logo {
+    font-family: "Montserrat",Arial, sans-serif; /* Choose a suitable font */
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: 800;
+    color: #edf0f1; /* Adjust color as needed */
+    text-align: center;
+    cursor: pointer; /*change the cursor wwhen hover above it */
+    margin-right: auto;
+}
+
+.nav__links {
+    list-style: none; /*remove the dot list style */
+}
+
+.nav__links li {
+    display: inline-block; /*make the list to be in single line */
+    padding: 0 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #0088a9;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+.image-container {
+    background-image: url('main-background.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 130vh;
+}
+
+h2 {
+    color: #294850;
+    margin: 0 50px;
+    padding: 80px 0 20px 80px;
+    font-size: 64px;
+}
+
+p {
+    color: #294850;
+    padding: 20px 0 20px 80px;
+    margin: 0 50px;
+    font-size: large;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 10%;
+}
+
+.footer-logo {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: medium;
+    margin-right: auto;
+    color: #edf0f1;
+    text-align: center;
+}
+
+footer > p {
+    font-family: "Montserrat", sans-serif;
+    color: #edf0f1;
+    padding: 0;
+}
