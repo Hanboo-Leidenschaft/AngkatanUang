@@ -108,3 +108,9 @@ footer > p {
     color: #edf0f1;
     padding: 0;
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    
+}
