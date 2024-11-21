@@ -23,11 +23,12 @@ header {
     justify-content: flex-end;
     align-items: center; /* to adjust the items will be in top, bottom, or center */
     padding: 30px 10%;
+    flex-wrap: wrap;
 }
 
 .logo {
     font-family: "Montserrat",Arial, sans-serif; /* Choose a suitable font */
-    font-size: 24px; /* Adjust font size as needed */
+    font-size: clamp(1.2rem, 5vw, 2rem); /* using relative unit */
     font-weight: 800;
     color: #edf0f1; /* Adjust color as needed */
     text-align: center;
@@ -86,6 +87,31 @@ p {
     padding: 20px 0 20px 80px;
     margin: 0 50px;
     font-size: large;
+}
+
+.watchlist {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px 0 20px 20px;
+  margin: 0 130px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+}
+
+.asset {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.asset-name {
+  margin-right: auto;
+}
+
+.asset-change {
+  margin-left: 180px;
 }
 
 footer {
